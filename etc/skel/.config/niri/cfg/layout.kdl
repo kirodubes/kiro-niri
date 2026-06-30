@@ -7,11 +7,12 @@ layout {
     // Transparent so noctalia-shell can draw the wallpaper behind the columns.
     background-color "transparent"
 
-    // Kiro blue accent on the focused column; muted on the rest.
+    // Catppuccin Mocha accent (mauve) on the focused column; muted on the rest.
+    // Matches the noctalia "Catppuccin" scheme shipped in ../noctalia/.
     focus-ring {
         width 2
-        active-color "#7aa2f7"
-        inactive-color "#414868"
+        active-color "#cba6f7"
+        inactive-color "#45475a"
     }
     border {
         off

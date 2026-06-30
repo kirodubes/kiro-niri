@@ -5,6 +5,10 @@
 ### What Changed
 - **Initial config package** for the Kiro niri edition — the scrollable-tiling member of the
   KIROTUX Wayland line. niri compositor + noctalia-shell (Quickshell v4) as the desktop shell.
+- **Catppuccin Mocha is the default look.** noctalia ships with `predefinedScheme: "Catppuccin"`
+  (`useWallpaperColors: false`) plus the generated `colors.json` palette, and niri's focus ring
+  is Catppuccin mauve (`#cba6f7`). Captured live from a running niri session, sanitized of
+  personal paths.
 
 ### Technical Details
 - niri config is modular: `etc/skel/.config/niri/config.kdl` `include`s `cfg/*.kdl`
@@ -22,6 +26,6 @@
 
 ### Files Modified
 - `etc/skel/.config/niri/config.kdl` + `cfg/*.kdl` + `keybindings.txt` + `bg/kiro.jpg`
-- `etc/skel/.config/noctalia/plugins.json`
+- `etc/skel/.config/noctalia/plugins.json`, `settings.json` (Catppuccin), `colors.json` (palette)
 - `etc/dconf/db/local.d/00-kiro.conf`, `etc/dconf/profile/user`
 - `README.md`, `CLAUDE.md`, `up.sh`, `setup.sh`, `.gitignore`
